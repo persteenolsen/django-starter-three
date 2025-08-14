@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    {% include "head.html" %}
+
+    <meta name="description" content="Account of this Python and Django Website">
+    <title>Logout</title>
+
+</head>
+
+<body>
+
+    {% include "bootstrap.html" %}
+    {% include "navbar.html" %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+
+                  {% if user.is_authenticated %}
+                  <h2>Are you sure that you want to logout, {{ user.username }} ?</h2>
+                  <p>You are currently logged in.</p>
+       
+                  {% else %}
+                  <h2>You are not logged in</h2>
+                  <p>Please log in or sign up to access all features.</p>
+                  {% endif %}
+
+                 <form method="post">
+                    {% csrf_token %}
+                    <button class="btn btn-primary" type="submit">Log Out</button>
+                 </form>
+                 
+            </div>
+        </div>
+    </div>
+
+
+    {% include "footer.html" %}
+
+</body>
+
+</html>

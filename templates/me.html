@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% include "head.html" %}
+
+  <meta name="description" content="Web Developer Per Olsen Denmark">
+  <title>About me</title>
+
+
+
+</head>
+
+<body>
+
+
+  {% include "bootstrap.html" %}
+  {% include "navbar.html" %}
+
+  {% load static %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+
+        <br />
+        <h2>Web Developer</h2>
+        <br />
+
+        <img src="{% static 'pso-django.jpg' %}" alt="Me">
+
+        <p>Per Olsen</p>
+        <p>Denmark</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  {% include "footer.html" %}
+
+</body>
+
+</html>

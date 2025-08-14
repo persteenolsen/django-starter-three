@@ -1,0 +1,47 @@
+<!-- templates/account/signup.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    {% include "head.html" %}
+
+    <meta name="description" content="Account of this Python and Django Website">
+    <title>Signup</title>
+
+</head>
+
+<body>
+
+    {% include "bootstrap.html" %}
+    {% include "navbar.html" %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+
+                <br />
+
+                {% block content %}
+
+                <h2>Sign up</h2>
+                <form method="post">
+                   {% csrf_token %}
+                   {{ form.as_p }}
+                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                </form>
+
+                {% endblock %}
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {% include "footer.html" %}
+
+</body>
+
+</html>

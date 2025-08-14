@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "head.html" %}
+        
+    <meta name="description" content="This Website was made with Python and Django serving as a Starter Boilerplate">
+    <title>Python and Django Website</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+</head>
+
+<body>
+
+
+    {% include "bootstrap.html" %}
+    {% include "navbar.html" %}
+    
+    {% load static %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+
+                <br />
+
+                <h2>Hello, World!</h2>
+
+                <p>
+                <div class="test">And this is <b>only</b> the beginning ...</div>
+                </p>
+                
+                <b>Welcome :-)</b>
+
+                <br /><br />
+                <img src="{% static 'python-logo.jpg' %}" alt="Python"> + 
+                <img src="{% static 'django-logo.jpg' %}" alt="Django">
+
+                <br /><br />
+
+                <p>Discover the Tech used for building this Python and Django Website ...</p>
+
+                
+            </div>
+        </div>
+
+    </div>
+
+    {% include "footer.html" %}
+
+</body>
+
+</html>
