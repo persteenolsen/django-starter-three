@@ -2,7 +2,7 @@
 
 # Python + Django + MySQL + Membership System + Vercel
 
-This example shows how to use Django 4 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+This example shows how to use Django 5.1.11 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
 Last updated: 14-08-2025
 
