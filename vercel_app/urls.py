@@ -1,7 +1,7 @@
 """vercel_app URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.1/topics/http/urls/
+    https://docs.djangoproject.com/en/5.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -26,8 +26,8 @@ urlpatterns = [
     
     path("profile/", TemplateView.as_view(template_name="profile.html")),  # new
 
-    
-    path("accounts/password/reset/", TemplateView.as_view(template_name="passwordresetform.html")),  # new
+    # 14-08-2025 - Disable the below old code due to Review
+    # path("accounts/password/reset/", TemplateView.as_view(template_name="passwordresetform.html")),  # new
     
 ]
 
