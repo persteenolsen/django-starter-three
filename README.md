@@ -1,6 +1,6 @@
 
 
-# Python + Django + MySQL + Vercel
+# Python + Django + MySQL + Membership System + Vercel
 
 This example shows how to use Django 4 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
@@ -215,10 +215,6 @@ Make sure to set Debug = False in the file `vercel_app/settings.py`
 
 Make a commit to your GitHub and your Django will build and deploy
 
-## Things for improvement
-
-You could try to add a model.py for the Admin Backend + Frontend
-
 ## Models
 
 Add a simple Model "Post" to be administrated by the Admin Backend and displayed by the Frontend
@@ -248,5 +244,35 @@ This command will create a file for the migration of the Model to a Table in the
 python manage.py migrate
 ```
 This will create the Table Post in the DB and you are now ready for administrate the Posts by the Django Admin Backend
+
+# Membership System
+
+A Membership System by django-allauth package with the below features:
+
+- Signup
+
+- Login
+
+- Logout
+
+- Reset Password
+
+- Change Password when logged in
+
+For implementing the Membership System take a look at the Documentation by django-allauth and this Starter where the following files are involved:
+
+- requirements.txt
+
+- .env
+
+- vercel_app / settings
+
+- vercel_app / urls
+
+- templates
+
+- templates / account
+
+- Both the SQLite + MySQL DB
 
 Happy use of Django :-)
