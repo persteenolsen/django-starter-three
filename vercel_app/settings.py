@@ -79,7 +79,21 @@ SITE_ID = 1  # new
 # test.dk - by Admin Backend - Sites
 # SITE_ID = 2  # new
 
-ACCOUNT_EMAIL_VERIFICATION = "none"  # new
+# 18-08-2025 - No Email confirmation is required when a User Signup
+#ACCOUNT_EMAIL_VERIFICATION = "none" # new
+
+# 18-08-2025 - Email confirmation IS required when a User Signup
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+
+# 18-08-2025 - Testing ...
+# The Token in the link of the Confirm Sign Email should expire after 1 day
+# (default: 3)
+# Determines the expiration date of email confirmation mails (# of days).
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
+
+# 18-08-2025 - The User can request a new Confirm Sign Email with a link to verify the Account  
+ACCOUNT_EMAIL_VERIFICATION_SUPPORTS_RESEND = True
 
 # django_project/settings.py
 LOGIN_REDIRECT_URL = "/profile"  # new

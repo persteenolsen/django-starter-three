@@ -4,7 +4,7 @@
 
 This example shows how to use Django 5.1.11 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
-Last updated: 16-08-2025
+Last updated: 18-08-2025
 
 Node version selected at Vercel Cloud: 22
 
@@ -249,7 +249,7 @@ This will create the Table Post in the DB and you are now ready for administrate
 
 A Membership System by django-allauth package with the below features:
 
-- Signup
+- Signup with Email Verification
 
 - Login
 
@@ -258,6 +258,8 @@ A Membership System by django-allauth package with the below features:
 - Reset Password
 
 - Change Password when logged in
+
+- Manage Email when logged in
 
 For implementing the Membership System take a look at the Documentation by django-allauth and this Starter where the following files are involved:
 
@@ -272,6 +274,8 @@ For implementing the Membership System take a look at the Documentation by djang
 - templates
 
 - templates / account
+
+- templates / allauth / layouts
 
 - Both the SQLite + MySQL DB
 
