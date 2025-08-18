@@ -1,0 +1,55 @@
+<!-- templates/account/login.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    {% include "head.html" %}
+
+    <meta name="description" content="Description of this Python and Django Website">
+    <title>Deactivate your Account</title>
+
+
+
+</head>
+
+<body>
+
+    {% include "bootstrap.html" %}
+    {% include "navbar.html" %}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+
+                <br />
+                
+                <h2>Deactivate your Account</h2><br />
+
+                <p><b>Note: </b>Before deactivating your Account, you will need consider:</p>
+
+                <ul>
+                 
+                    <li>A deactivated Account can only be reactivated by an Administrator</li>
+                    <li>You can not make a new Account with the same Email as the one in your deactivated Account</li>
+                </ul> 
+
+
+                <form method="post" action="{% url 'remove_account' %}">
+                    {% csrf_token %}
+                    <button class="btn btn-primary" type="submit">Deactivate account</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {% include "footer.html" %}
+
+</body>
+
+</html>

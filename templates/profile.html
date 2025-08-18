@@ -50,6 +50,7 @@
           {% if user.is_authenticated %}
            <li><a href="{% url 'account_change_password' %}">Change Password</a></li>
            <li><a href="{% url 'account_email' %}">Manage Email</a></li>
+           <li><a href="/deactivate-account">Deactivate your Account</a></li>
           {% endif %}
           <li><a href="{% url 'account_reset_password' %}">Reset Password</a></li>
         </ul>
