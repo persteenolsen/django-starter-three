@@ -35,7 +35,7 @@ from django.views.decorators.http import require_http_methods
 # Deactivate Account 
 @login_required
 @require_http_methods(['POST'])
-def remove_account(request):
+def deactivate_account(request):
     user_pk = request.user.pk
     auth_logout(request)
     User = get_user_model()

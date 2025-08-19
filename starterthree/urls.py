@@ -9,7 +9,7 @@ from starterthree.views import me
 
 from starterthree.views import blog
 
-from starterthree.views import remove_account
+from starterthree.views import deactivate_account
 
 urlpatterns = [
     
@@ -21,5 +21,5 @@ urlpatterns = [
 
     path('blog', blog),
 
-    path('remove-account', remove_account, name='remove_account'),
+    path('deactivate-account', deactivate_account, name='deactivate_account'),
 ]

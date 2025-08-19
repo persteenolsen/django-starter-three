@@ -37,7 +37,7 @@
                 </ul> 
 
 
-                <form method="post" action="{% url 'remove_account' %}">
+                <form method="post" action="{% url 'deactivate_account' %}">
                     {% csrf_token %}
                     <button class="btn btn-primary" type="submit">Deactivate account</button>
                 </form>
