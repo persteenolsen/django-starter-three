@@ -27,6 +27,9 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),  # new
     
     path("profile/", TemplateView.as_view(template_name="profile.html")),  # new
+    
+    # 19-08-2025 - A User can not Activate own deactivate Account
+    # path("open-account/", TemplateView.as_view(template_name="activate_account.html")),  # new
 
     path("close-account/", TemplateView.as_view(template_name="deactivate_account.html")),  # new
 

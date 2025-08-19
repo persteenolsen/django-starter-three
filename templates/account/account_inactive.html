@@ -1,0 +1,21 @@
+{% extends "allauth/layouts/entrance.html" %}
+{% load i18n %}
+{% load allauth %}
+{% block head_title %}
+    {% translate "Account Inactive" %}
+{% endblock head_title %}
+{% block content %}
+    {% element h1 %}
+        {% translate "Account Inactive" %}
+    {% endelement %}
+    {% element p %}
+        {% translate "This account is inactive." %}
+    {% endelement %}
+     <ul>
+        <li>You will need to contact an Administrator to reactivate or delete your Account !</li>
+        <!--# 19-08-2025 - A User with a Deactivated Account can not Activate or Delete own Account-->
+        <!--<li><a href="/open-account">Activate your Account</a></li>-->
+        <!--<li><a href="/cancel-account">Delete your Account</a></li>-->
+
+    </ul>
+{% endblock content %}
