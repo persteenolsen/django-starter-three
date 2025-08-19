@@ -11,6 +11,8 @@ from starterthree.views import blog
 
 from starterthree.views import deactivate_account
 
+from starterthree.views import delete_account
+
 urlpatterns = [
     
     path('', index),
@@ -22,4 +24,6 @@ urlpatterns = [
     path('blog', blog),
 
     path('deactivate-account', deactivate_account, name='deactivate_account'),
+    
+    path('delete-account', delete_account, name='delete_account'),
 ]

@@ -46,7 +46,7 @@ def deactivate_account(request):
     return HttpResponse(template.render())
 
 # Delete Account
-'''@login_required
+@login_required
 @require_http_methods(['POST'])
 def delete_account(request):
     user_pk = request.user.pk
@@ -57,4 +57,4 @@ def delete_account(request):
     # Return HTTP response to home page
     template = loader.get_template('index.html')
     return HttpResponse(template.render()) 
-'''    
+ 

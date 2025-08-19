@@ -30,6 +30,8 @@ urlpatterns = [
 
     path("close-account/", TemplateView.as_view(template_name="deactivate_account.html")),  # new
 
+    path("cancel-account/", TemplateView.as_view(template_name="delete_account.html")),  # new
+
     # 14-08-2025 - Disable the below old code due to Review
     # path("accounts/password/reset/", TemplateView.as_view(template_name="passwordresetform.html")),  # new
     

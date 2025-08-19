@@ -1,0 +1,55 @@
+<!-- templates/account/login.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    {% include "head.html" %}
+
+    <meta name="description" content="Description of this Python and Django Website">
+    <title>Delete your Account</title>
+
+
+
+</head>
+
+<body>
+
+    {% include "bootstrap.html" %}
+    {% include "navbar.html" %}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+
+                <br />
+                
+                <h2>Delete your Account</h2><br />
+
+                <p><b>Note: </b>Before deleting your Account, you will need consider:</p>
+
+                <ul>
+                 
+                    <li>A deleted Account can not be recreated</li>
+                    <li>You can always make a new Account with the same Email as the one in your deleted Account</li>
+                </ul> 
+
+
+                <form method="post" action="{% url 'delete_account' %}">
+                    {% csrf_token %}
+                    <button class="btn btn-primary" type="submit">Delete account</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {% include "footer.html" %}
+
+</body>
+
+</html>

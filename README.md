@@ -263,6 +263,8 @@ A Membership System by django-allauth package with the below features:
 
 - Deactivate own Account when logged in
 
+- Delete own Account when logged in
+
 For implementing the Membership System take a look at the Documentation by django-allauth and this Starter where the following files are involved:
 
 - requirements.txt
