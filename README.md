@@ -21,7 +21,23 @@ https://django-starter-three.vercel.app/
 - Create the virtual envirement ".venv" for the Django Web App by Powershell or by VS Code
 - Virtual Enviroment by VS Code: "View - Command Palette - Python Create Enviroment"
 
+## Install by Python commands in Powershell at Windows 10
 
+- python -m venv .venv
+
+- cd .venv
+
+- Scripts/activate
+
+- Copy requirements.txt to .venv 
+
+- (.venv) pip install -r requirements.txt
+
+- (.venv) pip freeze > requirements.txt
+
+- cd ../
+
+- python manage.py runserver
 The Administration Backend can use MySQL for Dev + Prod but can also work with a SQLite DB for developement locally ( Dev )
 
 ## How it Works
