@@ -38,6 +38,7 @@ https://django-starter-three.vercel.app/
 - cd ../
 
 - python manage.py runserver
+
 The Administration Backend can use MySQL for Dev + Prod but can also work with a SQLite DB for developement locally ( Dev )
 
 ## How it Works
