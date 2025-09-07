@@ -4,7 +4,7 @@
 
 This example shows how to use Django 5.1.11 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
-Last updated: 05-09-2025
+Last updated: 07-09-2025
 
 Node version selected at Vercel Cloud: 22
 
@@ -21,6 +21,7 @@ https://django-starter-three.vercel.app/
 - Create the virtual envirement ".venv" for the Django Web App by Powershell or by VS Code
 - Virtual Enviroment by VS Code: "View - Command Palette - Python Create Enviroment"
 
+
 ## Install by Python commands in Powershell at Windows 10
 
 - python -m venv .venv
@@ -29,13 +30,17 @@ https://django-starter-three.vercel.app/
 
 - Scripts/activate
 
-- Copy requirements.txt to .venv 
+- Copy requirements.txt to .venv
 
 - (.venv) pip install -r requirements.txt
 
 - (.venv) pip freeze > requirements.txt
 
-- cd ../
+- (.venv) cd ../
+
+- (.venv) python manage.py runserver
+
+When starting the Django Website from the Vertual Enviroment (.venv) you will notice that Django 5.1.11 wil start. Otherwise you can use the Global Django if you have one installed by running:
 
 - python manage.py runserver
 
