@@ -4,7 +4,7 @@
 
 This example shows how to use Django 5.1.11 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
-Last updated: 07-09-2025
+Last updated: 08-09-2025
 
 Node version selected at Vercel Cloud: 22
 
@@ -313,24 +313,25 @@ Open Powershell and generate a new secret key:
 
 - python manage.py shell 
 
-Now paste the following lines of code:
+Now paste the following lines of code
 
-- >>> from django.core.management.utils import get_random_secret_key
-
-- >>> print(get_random_secret_key())
-
+```bash
+>>> from django.core.management.utils import get_random_secret_key
+>>> print(get_random_secret_key())
+```
 A Secrey key will be printed which you can copy and save in the .env file and by environment variables in Production
 
 Note: You may want to have a url safe secret key if your host not allows specials charactars in the enviroment variables and you can use:
 
-- >>> import secrets
-
-- >>> print(secrets.token_urlsafe(50))
-
+```bash
+>>> import secrets
+>>> print(secrets.token_urlsafe(50))
+```
 This will also print a Secret key
 
 Leave the shell by typing:
 
-- >>> exit()
-
+```bash
+>>> exit()
+```
 Happy use of Django :-)
